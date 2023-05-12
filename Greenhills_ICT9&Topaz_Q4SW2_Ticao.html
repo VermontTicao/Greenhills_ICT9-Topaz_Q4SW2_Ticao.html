@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Time Converter</title>
+</head>
+	<div class="container bg-light text-center p-3">
+	<h1>Time Converter</h1></div></html>
+<body>
+	<center><br><br><br><br><br><br><br><br><br><br><br><br><table><th style="background-color:#FFFFFF">Seconds
+			<p><input type="text" id="seconds"></p>
+			<input type="button" class="btn btn-warning" onclick="SecMin()" value="To Minutes">
+			<input type="button" class="btn btn-warning" onclick="SecHr()" value="To Hours">
+			<input type="button" class="btn btn-warning" onclick="SecDt()" value="To Days">
+</table>
+</body>
+</html>
+<script>
+	function SecMin(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function SecHr(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 3600;		
+		alert(x / y);
+	}
+
+	function SecDt(){
+		var x, y 
+		x = (document.getElementById('seconds').value);
+		y = 86400;		
+		alert(x / y);
+	}
+</script></th></body></div></html>
